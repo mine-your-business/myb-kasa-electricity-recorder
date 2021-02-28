@@ -48,6 +48,7 @@ In order to use an API Key to programmatically access a spreadsheet, the easiest
 1. Create a [Google Cloud Platform (GCP) project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 1. [Enable the Google Sheets API](https://support.google.com/googleapi/answer/6158841?hl=en)
 1. [Create a service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts)
+1. [Create an API Key for your Service Account](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) - will ultimately give you a JSON file with key data to use
 1. [Share](https://support.google.com/docs/answer/2494822?co=GENIE.Platform%3DDesktop&hl=en) the spreadsheet with that service account's email
 
 ## Set up Secrets
