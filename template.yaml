@@ -20,26 +20,35 @@ Resources:
           # This actually doesn't change anything at this time - data will
           # still be written to the sheets
           RUN_MODE: "production"
+
           # This measures data starting from two days ago. This makes sure the
           # data has "settled" and doesn't have any weird timezone issues
           MEASURE_OFFSET: "2"
+
+          # Customize this value to whatever you want - your Kasa plugs will need to have this text
+          # somewhere in their name. For example, a Kasa plug named "My Miner Plug" would match
           DEVICES_LIKE: "miner"
+
           # Visit https://www.tplinkcloud.com/ to register an account
           # Note that the API is not officially supported for custom use
           # Username is just an email
           TPLINK_KASA_USERNAME: '{{resolve:ssm:/tplink_kasa/username:1}}'
           TPLINK_KASA_PASSWORD: '{{resolve:ssm:/tplink_kasa/password:1}}'
           TPLINK_KASA_API_URL: https://wap.tplinkcloud.com
+
           # A number in dollars, so 13 cents per KW/h would be 0.13
           SHEETS_ESTIMATED_ELEC_KWH_COST: 0.13
+
           SHEETS_AGGREGATES_SPREADSHEET_ID: '{{resolve:ssm:/google/sheets/spreadsheets/mine_your_business/energy_aggregates/id:1}}' 
           SHEETS_AGGREGATES_SPREADSHEET_SHEET_ID: '{{resolve:ssm:/google/sheets/spreadsheets/mine_your_business/energy_aggregates/sheet_id:1}}' 
           SHEETS_AGGREGATES_SPREADSHEET_DATA_START_COLUMN: 0
           SHEETS_AGGREGATES_SPREADSHEET_DATA_END_COLUMN: 4
+
           SHEETS_PLUG_SPREADSHEET_ID: '{{resolve:ssm:/google/sheets/spreadsheets/mine_your_business/energy_plug/id:1}}' 
           SHEETS_PLUG_SPREADSHEET_SHEET_ID: '{{resolve:ssm:/google/sheets/spreadsheets/mine_your_business/energy_plug/sheet_id:1}}' 
           SHEETS_PLUG_SPREADSHEET_DATA_START_COLUMN: 0
           SHEETS_PLUG_SPREADSHEET_DATA_END_COLUMN: 5
+
           SHEETS_CREDENTIALS_TYPE: '{{resolve:ssm:/google/sheets/credentials/mine_your_business/type:1}}' 
           SHEETS_CREDENTIALS_PROJECT_ID: '{{resolve:ssm:/google/sheets/credentials/mine_your_business/project_id:1}}' 
           SHEETS_CREDENTIALS_PRIVATE_KEY_ID: '{{resolve:ssm:/google/sheets/credentials/mine_your_business/private_key_id:1}}' 
