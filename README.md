@@ -44,7 +44,7 @@ Sheets API documentation (Python) can be found [here](https://developers.google.
 
 A spreadsheet's ID and individual sheet ID (within a spreadsheet) can be found following the instructions [here](https://developers.google.com/sheets/api/guides/concepts). (Hint: it's in the URL! `https://docs.google.com/spreadsheets/d/spreadsheetId/edit#gid=sheetId`)
 
-In order to use an API Key to programmatically access a spreadsheet, the easiest method I found was:
+In order to use an API Key to programmatically access a spreadsheet using a "service account", you will need to complete the following steps:
 1. Create a [Google Cloud Platform (GCP) project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
 1. [Enable the Google Sheets API](https://support.google.com/googleapi/answer/6158841?hl=en)
 1. [Create a service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts)
