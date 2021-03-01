@@ -26,11 +26,11 @@ You will need a TP-Link Kasa account so that you can provide credentials. These 
 
 This project leverages Google Sheets for long-term storage of the daily smart plug electricity usage. It uses two spreadsheets, one for aggregates each day of all plugs detected based on name pattern matching, and the other for individual plug power recordings.
 
-The current column settings assume you have a sheet that looks like this for the aggregates:
+The current column settings assume you have a sheet that looks like this for the aggregates (`Date,energy_wh,Devices Like,Cost Estimate`):
 
 ![Aggregates Sheet](images/aggregates_sheet.png)
 
-And a sheet that looks like this for the individual plug readings:
+And a sheet that looks like this for the individual plug readings (`Date,energy_wh,Name,Cost Estimate,ID`):
 
 ![Plugs Sheet](images/plugs_sheet.png)
 
