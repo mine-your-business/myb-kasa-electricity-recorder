@@ -139,12 +139,13 @@ class ElectricityRecorder:
             plug_sheet_config.data_end_column, 
         )
         insert_result = None
+        device_id = device.child_id if hasattr(device, 'child_id') else device.device_id
         entry_data = [
             date_string, 
             device_wh, 
             device.get_alias(),
             cost_estimate,
-            device.device_info.id
+            device_id
         ]
         
         if self.test_mode:
