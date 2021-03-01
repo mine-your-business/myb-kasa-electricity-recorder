@@ -22,7 +22,7 @@ class SheetsCredentials:
         self.private_key = os.environ.get('SHEETS_CREDENTIALS_PRIVATE_KEY').replace(r'\n', '\n')
         self.client_email = os.environ.get('SHEETS_CREDENTIALS_CLIENT_EMAIL')
         self.client_id = os.environ.get('SHEETS_CREDENTIALS_CLIENT_ID')
-        self.token_uri = os.environ.get('SHEETS_CREDENTILS_TOKEN_URI')
+        self.token_uri = os.environ.get('SHEETS_CREDENTIALS_TOKEN_URI')
         self.auth_provider_x509_cert_url = os.environ.get('SHEETS_CREDENTIALS_AUTH_PROVIDER_X509_CERT_URL')
         self.client_x509_cert_url = os.environ.get('SHEETS_CREDENTIALS_CLIENT_X509_CERT_URL')
 

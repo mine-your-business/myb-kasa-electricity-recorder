@@ -56,7 +56,7 @@ Resources:
           SHEETS_CREDENTIALS_CLIENT_EMAIL: '{{resolve:ssm:/google/sheets/credentials/mine_your_business/client_email:1}}' 
           SHEETS_CREDENTIALS_CLIENT_ID: '{{resolve:ssm:/google/sheets/credentials/mine_your_business/client_id:1}}' 
           # SHEETS_CREDENTIALS_AUTH_URI: https://accounts.google.com/o/oauth2/auth
-          SHEETS_CREDENTILS_TOKEN_URI: https://oauth2.googleapis.com/token
+          SHEETS_CREDENTIALS_TOKEN_URI: https://oauth2.googleapis.com/token
           SHEETS_CREDENTIALS_AUTH_PROVIDER_X509_CERT_URL: https://www.googleapis.com/oauth2/v1/certs
           SHEETS_CREDENTIALS_CLIENT_X509_CERT_URL: '{{resolve:ssm:/google/sheets/credentials/mine_your_business/client_x509_cert_url:1}}' 
       Events:
