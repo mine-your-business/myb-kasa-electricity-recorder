@@ -13,7 +13,7 @@ Resources:
       CodeUri: kasa_electricity_recorder_function
       Handler: kasa_electricity_recorder.app.lambda_handler
       Runtime: python3.8
-      Timeout: 30
+      Timeout: 120
       Environment:
         Variables:
           # If RUN_MODE is 'test', runs in test mode
